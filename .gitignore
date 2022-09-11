@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+*.csv
+*.png
+*.pdf
+*.pkl
+*.pyd
+*.pyc
+output/
+output_test/
+
+02_output_proxy_models/
+03_output_target_rules/
+04_output_best_proxy/
+target_rules.py
