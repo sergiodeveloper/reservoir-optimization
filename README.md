@@ -11,11 +11,20 @@ WEIF[{well}] - value in the range [10^8, 10^10]
 
 The file is saved in `sample_original_dataset.csv`
 
+If you want to use your own dataset, save it as `sample_original_dataset.csv` with the same columns.
+
 ---
 
 ## `01_simplify_dataset.py`
 
 Simplifies the dataset with zeroes and saves it in `simplified_dataset.csv`
+
+---
+
+## `01.2_adjust_rules_repeatedly.py`
+
+Adjusts the rules repeatedly for each well and saves the evolution of the rules in the file `01.2_output_adjust_rules_repeatedly.png`.
+Used to generate rules for the simulator to validate the performance of the target rules.
 
 ---
 

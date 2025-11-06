@@ -1,0 +1,551 @@
+PRK014
+Progress: 2.2% - Processing PRK014 with GTB
+⏱️  TIME ELAPSED: 0s
+      ✓ Fold 1 completed in 9.5s
+      ⏱️  Remaining folds: 37s
+      ✓ Fold 2 completed in 8.2s
+      ⏱️  Remaining folds: 24s
+      ✓ Fold 3 completed in 7.5s
+      ⏱️  Remaining folds: 15s
+      ✓ Fold 4 completed in 7.7s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.9s
+Progress: 4.4% - Processing PRK014 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 29m 55s
+⏱️  TIME ELAPSED: 40s
+      ✓ Fold 1 completed in 2.9s
+      ⏱️  Remaining folds: 11s
+      ✓ Fold 2 completed in 2.8s
+      ⏱️  Remaining folds: 8s
+      ✓ Fold 3 completed in 3.0s
+      ⏱️  Remaining folds: 5s
+      ✓ Fold 4 completed in 3.0s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.3s
+Progress: 6.7% - Processing PRK014 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 34m 37s
+⏱️  TIME ELAPSED: 55s
+      ✓ Fold 1 completed in 51.0s
+      ⏱️  Remaining folds: 3m 23s
+      ✓ Fold 2 completed in 50.3s
+      ⏱️  Remaining folds: 2m 30s
+      ✓ Fold 3 completed in 51.9s
+      ⏱️  Remaining folds: 1m 43s
+      ✓ Fold 4 completed in 47.3s
+      ⏱️  Remaining folds: 47s
+      ✓ Fold 5 completed in 47.4s
+Progress: 8.9% - Processing PRK014 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 1h 33m 22s
+⏱️  TIME ELAPSED: 5m 3s
+      ✓ Fold 1 completed in 10.9s
+      ⏱️  Remaining folds: 43s
+      ✓ Fold 2 completed in 10.3s
+      ⏱️  Remaining folds: 30s
+      ✓ Fold 3 completed in 10.5s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 4 completed in 9.9s
+      ⏱️  Remaining folds: 9s
+      ✓ Fold 5 completed in 9.5s
+Progress: 11.1% - Processing PRK014 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 8m 57s
+⏱️  TIME ELAPSED: 5m 54s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+PRK028
+Progress: 13.3% - Processing PRK028 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 28m 11s
+⏱️  TIME ELAPSED: 5m 56s
+      ✓ Fold 1 completed in 7.4s
+      ⏱️  Remaining folds: 29s
+      ✓ Fold 2 completed in 7.0s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 7.0s
+      ⏱️  Remaining folds: 14s
+      ✓ Fold 4 completed in 7.3s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 6.9s
+Progress: 15.6% - Processing PRK028 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 42m 54s
+⏱️  TIME ELAPSED: 6m 32s
+      ✓ Fold 1 completed in 3.3s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 2 completed in 3.0s
+      ⏱️  Remaining folds: 8s
+      ✓ Fold 3 completed in 2.9s
+      ⏱️  Remaining folds: 5s
+      ✓ Fold 4 completed in 3.2s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.0s
+Progress: 17.8% - Processing PRK028 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 52m 55s
+⏱️  TIME ELAPSED: 6m 47s
+      ✓ Fold 1 completed in 41.0s
+      ⏱️  Remaining folds: 2m 43s
+      ✓ Fold 2 completed in 39.3s
+      ⏱️  Remaining folds: 1m 57s
+      ✓ Fold 3 completed in 39.2s
+      ⏱️  Remaining folds: 1m 18s
+      ✓ Fold 4 completed in 43.0s
+      ⏱️  Remaining folds: 43s
+      ✓ Fold 5 completed in 42.4s
+Progress: 20.0% - Processing PRK028 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 14m 33s
+⏱️  TIME ELAPSED: 10m 12s
+      ✓ Fold 1 completed in 6.5s
+      ⏱️  Remaining folds: 25s
+      ✓ Fold 2 completed in 6.7s
+      ⏱️  Remaining folds: 20s
+      ✓ Fold 3 completed in 6.4s
+      ⏱️  Remaining folds: 12s
+      ✓ Fold 4 completed in 6.3s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 5 completed in 7.0s
+Progress: 22.2% - Processing PRK028 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 31m 17s
+⏱️  TIME ELAPSED: 10m 45s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+PRK045
+Progress: 24.4% - Processing PRK045 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 42m 38s
+⏱️  TIME ELAPSED: 10m 47s
+      ✓ Fold 1 completed in 7.6s
+      ⏱️  Remaining folds: 30s
+      ✓ Fold 2 completed in 7.0s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 7.9s
+      ⏱️  Remaining folds: 15s
+      ✓ Fold 4 completed in 7.6s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.7s
+Progress: 26.7% - Processing PRK045 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 51m 55s
+⏱️  TIME ELAPSED: 11m 25s
+      ✓ Fold 1 completed in 3.1s
+      ⏱️  Remaining folds: 12s
+      ✓ Fold 2 completed in 3.0s
+      ⏱️  Remaining folds: 8s
+      ✓ Fold 3 completed in 2.9s
+      ⏱️  Remaining folds: 5s
+      ✓ Fold 4 completed in 3.4s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 2.9s
+Progress: 28.9% - Processing PRK045 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 58m 27s
+⏱️  TIME ELAPSED: 11m 40s
+      ✓ Fold 1 completed in 40.6s
+      ⏱️  Remaining folds: 2m 42s
+      ✓ Fold 2 completed in 40.6s
+      ⏱️  Remaining folds: 2m 1s
+      ✓ Fold 3 completed in 39.0s
+      ⏱️  Remaining folds: 1m 17s
+      ✓ Fold 4 completed in 45.2s
+      ⏱️  Remaining folds: 45s
+      ✓ Fold 5 completed in 47.4s
+Progress: 31.1% - Processing PRK045 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 10m 55s
+⏱️  TIME ELAPSED: 15m 13s
+      ✓ Fold 1 completed in 6.9s
+      ⏱️  Remaining folds: 27s
+      ✓ Fold 2 completed in 6.8s
+      ⏱️  Remaining folds: 20s
+      ✓ Fold 3 completed in 6.4s
+      ⏱️  Remaining folds: 12s
+      ✓ Fold 4 completed in 6.5s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 5 completed in 7.0s
+Progress: 33.3% - Processing PRK045 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 20m 39s
+⏱️  TIME ELAPSED: 15m 46s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+PRK052
+Progress: 35.6% - Processing PRK052 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 27m 4s
+⏱️  TIME ELAPSED: 15m 49s
+      ✓ Fold 1 completed in 7.6s
+      ⏱️  Remaining folds: 30s
+      ✓ Fold 2 completed in 7.1s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 7.5s
+      ⏱️  Remaining folds: 14s
+      ✓ Fold 4 completed in 7.6s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.0s
+Progress: 37.8% - Processing PRK052 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 31m 48s
+⏱️  TIME ELAPSED: 16m 25s
+      ✓ Fold 1 completed in 3.2s
+      ⏱️  Remaining folds: 12s
+      ✓ Fold 2 completed in 2.9s
+      ⏱️  Remaining folds: 8s
+      ✓ Fold 3 completed in 3.0s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 4 completed in 3.1s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.0s
+Progress: 40.0% - Processing PRK052 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 34m 29s
+⏱️  TIME ELAPSED: 16m 41s
+      ✓ Fold 1 completed in 46.8s
+      ⏱️  Remaining folds: 3m 7s
+      ✓ Fold 2 completed in 50.2s
+      ⏱️  Remaining folds: 2m 30s
+      ✓ Fold 3 completed in 51.3s
+      ⏱️  Remaining folds: 1m 42s
+      ✓ Fold 4 completed in 47.2s
+      ⏱️  Remaining folds: 47s
+      ✓ Fold 5 completed in 52.6s
+Progress: 42.2% - Processing PRK052 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 41m 12s
+⏱️  TIME ELAPSED: 20m 49s
+      ✓ Fold 1 completed in 8.5s
+      ⏱️  Remaining folds: 33s
+      ✓ Fold 2 completed in 7.2s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 7.2s
+      ⏱️  Remaining folds: 14s
+      ✓ Fold 4 completed in 7.4s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.1s
+Progress: 44.4% - Processing PRK052 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 45m 53s
+⏱️  TIME ELAPSED: 21m 26s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.5s
+PRK060
+Progress: 46.7% - Processing PRK060 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 48m 0s
+⏱️  TIME ELAPSED: 21m 28s
+      ✓ Fold 1 completed in 7.3s
+      ⏱️  Remaining folds: 29s
+      ✓ Fold 2 completed in 8.7s
+      ⏱️  Remaining folds: 25s
+      ✓ Fold 3 completed in 7.6s
+      ⏱️  Remaining folds: 15s
+      ✓ Fold 4 completed in 7.6s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.2s
+Progress: 48.9% - Processing PRK060 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 48m 35s
+⏱️  TIME ELAPSED: 22m 7s
+      ✓ Fold 1 completed in 3.3s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 2 completed in 3.0s
+      ⏱️  Remaining folds: 9s
+      ✓ Fold 3 completed in 3.2s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 4 completed in 3.2s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.1s
+Progress: 51.1% - Processing PRK060 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 47m 24s
+⏱️  TIME ELAPSED: 22m 23s
+      ✓ Fold 1 completed in 44.6s
+      ⏱️  Remaining folds: 2m 58s
+      ✓ Fold 2 completed in 46.1s
+      ⏱️  Remaining folds: 2m 18s
+      ✓ Fold 3 completed in 47.4s
+      ⏱️  Remaining folds: 1m 34s
+      ✓ Fold 4 completed in 42.9s
+      ⏱️  Remaining folds: 42s
+      ✓ Fold 5 completed in 42.6s
+Progress: 53.3% - Processing PRK060 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 47m 55s
+⏱️  TIME ELAPSED: 26m 6s
+      ✓ Fold 1 completed in 6.9s
+      ⏱️  Remaining folds: 27s
+      ✓ Fold 2 completed in 6.7s
+      ⏱️  Remaining folds: 20s
+      ✓ Fold 3 completed in 6.8s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 4 completed in 6.7s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 5 completed in 6.9s
+Progress: 55.6% - Processing PRK060 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 46m 43s
+⏱️  TIME ELAPSED: 26m 40s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+PRK061
+Progress: 57.8% - Processing PRK061 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 43m 30s
+⏱️  TIME ELAPSED: 26m 42s
+      ✓ Fold 1 completed in 7.4s
+      ⏱️  Remaining folds: 29s
+      ✓ Fold 2 completed in 7.1s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 7.1s
+      ⏱️  Remaining folds: 14s
+      ✓ Fold 4 completed in 7.1s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 6.7s
+Progress: 60.0% - Processing PRK061 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 38m 55s
+⏱️  TIME ELAPSED: 27m 17s
+      ✓ Fold 1 completed in 3.3s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 2 completed in 3.0s
+      ⏱️  Remaining folds: 9s
+      ✓ Fold 3 completed in 3.1s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 4 completed in 3.2s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.1s
+Progress: 62.2% - Processing PRK061 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 32m 50s
+⏱️  TIME ELAPSED: 27m 33s
+      ✓ Fold 1 completed in 38.1s
+      ⏱️  Remaining folds: 2m 32s
+      ✓ Fold 2 completed in 38.4s
+      ⏱️  Remaining folds: 1m 55s
+      ✓ Fold 3 completed in 35.8s
+      ⏱️  Remaining folds: 1m 11s
+      ✓ Fold 4 completed in 37.1s
+      ⏱️  Remaining folds: 37s
+      ✓ Fold 5 completed in 38.5s
+Progress: 64.4% - Processing PRK061 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 27m 6s
+⏱️  TIME ELAPSED: 30m 41s
+      ✓ Fold 1 completed in 7.0s
+      ⏱️  Remaining folds: 27s
+      ✓ Fold 2 completed in 7.1s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 6.8s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 4 completed in 6.2s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 5 completed in 6.5s
+Progress: 66.7% - Processing PRK061 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 19m 58s
+⏱️  TIME ELAPSED: 31m 15s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.5s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+PRK083
+Progress: 68.9% - Processing PRK083 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 11m 14s
+⏱️  TIME ELAPSED: 31m 17s
+      ✓ Fold 1 completed in 7.4s
+      ⏱️  Remaining folds: 29s
+      ✓ Fold 2 completed in 6.8s
+      ⏱️  Remaining folds: 20s
+      ✓ Fold 3 completed in 6.9s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 4 completed in 7.2s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.2s
+Progress: 71.1% - Processing PRK083 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 4h 1m 19s
+⏱️  TIME ELAPSED: 31m 52s
+      ✓ Fold 1 completed in 3.1s
+      ⏱️  Remaining folds: 12s
+      ✓ Fold 2 completed in 3.7s
+      ⏱️  Remaining folds: 11s
+      ✓ Fold 3 completed in 3.3s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 4 completed in 3.1s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.0s
+Progress: 73.3% - Processing PRK083 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 50m 9s
+⏱️  TIME ELAPSED: 32m 9s
+      ✓ Fold 1 completed in 38.3s
+      ⏱️  Remaining folds: 2m 33s
+      ✓ Fold 2 completed in 37.9s
+      ⏱️  Remaining folds: 1m 53s
+      ✓ Fold 3 completed in 38.2s
+      ⏱️  Remaining folds: 1m 16s
+      ✓ Fold 4 completed in 37.0s
+      ⏱️  Remaining folds: 37s
+      ✓ Fold 5 completed in 38.3s
+Progress: 75.6% - Processing PRK083 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 38m 50s
+⏱️  TIME ELAPSED: 35m 18s
+      ✓ Fold 1 completed in 7.1s
+      ⏱️  Remaining folds: 28s
+      ✓ Fold 2 completed in 6.7s
+      ⏱️  Remaining folds: 20s
+      ✓ Fold 3 completed in 7.2s
+      ⏱️  Remaining folds: 14s
+      ✓ Fold 4 completed in 6.7s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 5 completed in 6.7s
+Progress: 77.8% - Processing PRK083 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 26m 19s
+⏱️  TIME ELAPSED: 35m 53s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.5s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+PRK084
+Progress: 80.0% - Processing PRK084 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 3h 12m 28s
+⏱️  TIME ELAPSED: 35m 55s
+      ✓ Fold 1 completed in 7.5s
+      ⏱️  Remaining folds: 29s
+      ✓ Fold 2 completed in 7.1s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 7.4s
+      ⏱️  Remaining folds: 14s
+      ✓ Fold 4 completed in 7.3s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.1s
+Progress: 82.2% - Processing PRK084 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 57m 32s
+⏱️  TIME ELAPSED: 36m 31s
+      ✓ Fold 1 completed in 3.4s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 2 completed in 3.1s
+      ⏱️  Remaining folds: 9s
+      ✓ Fold 3 completed in 3.0s
+      ⏱️  Remaining folds: 5s
+      ✓ Fold 4 completed in 3.1s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.1s
+Progress: 84.4% - Processing PRK084 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 41m 30s
+⏱️  TIME ELAPSED: 36m 47s
+      ✓ Fold 1 completed in 43.8s
+      ⏱️  Remaining folds: 2m 55s
+      ✓ Fold 2 completed in 44.8s
+      ⏱️  Remaining folds: 2m 14s
+      ✓ Fold 3 completed in 49.7s
+      ⏱️  Remaining folds: 1m 39s
+      ✓ Fold 4 completed in 44.8s
+      ⏱️  Remaining folds: 44s
+      ✓ Fold 5 completed in 45.3s
+Progress: 86.7% - Processing PRK084 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 25m 4s
+⏱️  TIME ELAPSED: 40m 35s
+      ✓ Fold 1 completed in 6.5s
+      ⏱️  Remaining folds: 26s
+      ✓ Fold 2 completed in 6.9s
+      ⏱️  Remaining folds: 20s
+      ✓ Fold 3 completed in 6.9s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 4 completed in 6.8s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 5 completed in 6.6s
+Progress: 88.9% - Processing PRK084 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 2h 7m 29s
+⏱️  TIME ELAPSED: 41m 9s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+PRK085
+Progress: 91.1% - Processing PRK085 with GTB
+⏰ OVERALL ESTIMATED TIME REMAINING: 1h 48m 44s
+⏱️  TIME ELAPSED: 41m 11s
+      ✓ Fold 1 completed in 7.4s
+      ⏱️  Remaining folds: 29s
+      ✓ Fold 2 completed in 7.3s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 6.9s
+      ⏱️  Remaining folds: 13s
+      ✓ Fold 4 completed in 7.3s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 7.6s
+Progress: 93.3% - Processing PRK085 with KRR
+⏰ OVERALL ESTIMATED TIME REMAINING: 1h 28m 56s
+⏱️  TIME ELAPSED: 41m 47s
+      ✓ Fold 1 completed in 3.1s
+      ⏱️  Remaining folds: 12s
+      ✓ Fold 2 completed in 3.0s
+      ⏱️  Remaining folds: 9s
+      ✓ Fold 3 completed in 3.2s
+      ⏱️  Remaining folds: 6s
+      ✓ Fold 4 completed in 3.1s
+      ⏱️  Remaining folds: 3s
+      ✓ Fold 5 completed in 3.2s
+Progress: 95.6% - Processing PRK085 with GPR
+⏰ OVERALL ESTIMATED TIME REMAINING: 1h 8m 7s
+⏱️  TIME ELAPSED: 42m 3s
+      ✓ Fold 1 completed in 43.5s
+      ⏱️  Remaining folds: 2m 54s
+      ✓ Fold 2 completed in 43.0s
+      ⏱️  Remaining folds: 2m 9s
+      ✓ Fold 3 completed in 50.0s
+      ⏱️  Remaining folds: 1m 40s
+      ✓ Fold 4 completed in 50.0s
+      ⏱️  Remaining folds: 49s
+      ✓ Fold 5 completed in 48.3s
+Progress: 97.8% - Processing PRK085 with MLP
+⏰ OVERALL ESTIMATED TIME REMAINING: 46m 29s
+⏱️  TIME ELAPSED: 45m 58s
+      ✓ Fold 1 completed in 7.5s
+      ⏱️  Remaining folds: 29s
+      ✓ Fold 2 completed in 7.2s
+      ⏱️  Remaining folds: 21s
+      ✓ Fold 3 completed in 7.7s
+      ⏱️  Remaining folds: 15s
+      ✓ Fold 4 completed in 7.4s
+      ⏱️  Remaining folds: 7s
+      ✓ Fold 5 completed in 6.9s
+Progress: 100.0% - Processing PRK085 with KNN
+⏰ OVERALL ESTIMATED TIME REMAINING: 23m 46s
+⏱️  TIME ELAPSED: 46m 35s
+      ✓ Fold 1 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 2 completed in 0.4s
+      ⏱️  Remaining folds: 1s
+      ✓ Fold 3 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 4 completed in 0.4s
+      ⏱️  Remaining folds: 0s
+      ✓ Fold 5 completed in 0.4s
+All wells processed!
+Total training time: 2794.99 seconds
+Total testing time: 1.22 seconds

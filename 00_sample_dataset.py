@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 
-sample_size = 500
+sample_size = 25
 
 sample_dataset = pd.DataFrame()
 
