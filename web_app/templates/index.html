@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservoir Optimization - Target Rules Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reservoir Optimization - Target Rules Generator</h1>
+            <p class="subtitle">Generate optimal GOR threshold rules for well optimization</p>
+        </header>
+
+        <!-- Step 1: Upload Rules File -->
+        <section id="step1" class="step active">
+            <div class="step-header">
+                <span class="step-number">1</span>
+                <h2>Upload Rules File</h2>
+            </div>
+            <div class="step-content">
+                <div class="upload-area" id="uploadRulesArea">
+                    <input type="file" id="rulesFileInput" accept=".csv" style="display: none;">
+                    <div class="upload-box" id="uploadRulesBox">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="15" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <line x1="12" y1="3" x2="12" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="7,8 12,3 17,8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>Click to upload or drag and drop</p>
+                        <p class="file-hint">CSV files with GOR rules</p>
+                    </div>
+                </div>
+                <div id="uploadRulesStatus" class="status-message" style="display: none;"></div>
+                <div id="rulesFileInfo" class="file-info" style="display: none;">
+                    <h3>Rules File Information</h3>
+                    <p><strong>Filename:</strong> <span id="rulesFileName"></span></p>
+                    <p><strong>Total Rows:</strong> <span id="rulesRowCount"></span></p>
+                    <p><strong>Columns:</strong> <span id="rulesColumnCount"></span></p>
+                </div>
+
+                <!-- ID Column Selection for Rules -->
+                <div id="rulesIdColumnSelection" class="form-group" style="display: none; margin-top: 20px;">
+                    <label for="rulesIdColumn"><strong>Select ID Column:</strong></label>
+                    <select id="rulesIdColumn" class="form-control">
+                        <option value="">None (use row order)</option>
+                    </select>
+                    <p class="info-text" style="font-size: 0.9em; color: #666; margin-top: 5px;">Select the column that identifies each row (e.g., Execution, ID, Iteration)</p>
+                </div>
+
+                <!-- Column Selection for Rules -->
+                <div id="rulesColumnSelection" class="wells-config" style="display: none;">
+                    <h3>Select GOR Columns for Each Well</h3>
+                    <p class="info-text">For each well, select exactly 15 GOR feature columns (3 zones × 5 stages)</p>
+                    <div id="rulesWellsContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2: Upload Results File -->
+        <section id="step2" class="step">
+            <div class="step-header">
+                <span class="step-number">2</span>
+                <h2>Upload Results File</h2>
+            </div>
+            <div class="step-content">
+                <div class="upload-area" id="uploadResultsArea">
+                    <input type="file" id="resultsFileInput" accept=".csv" style="display: none;">
+                    <div class="upload-box" id="uploadResultsBox">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="15" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <line x1="12" y1="3" x2="12" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="7,8 12,3 17,8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>Click to upload or drag and drop</p>
+                        <p class="file-hint">CSV files with WEIF results</p>
+                    </div>
+                </div>
+                <div id="uploadResultsStatus" class="status-message" style="display: none;"></div>
+                <div id="resultsFileInfo" class="file-info" style="display: none;">
+                    <h3>Results File Information</h3>
+                    <p><strong>Filename:</strong> <span id="resultsFileName"></span></p>
+                    <p><strong>Total Rows:</strong> <span id="resultsRowCount"></span></p>
+                    <p><strong>Columns:</strong> <span id="resultsColumnCount"></span></p>
+                    <div id="rowCountWarning" class="status-message" style="display: none; margin-top: 10px;"></div>
+                </div>
+
+                <!-- ID Column Selection for Results -->
+                <div id="resultsIdColumnSelection" class="form-group" style="display: none; margin-top: 20px;">
+                    <label for="resultsIdColumn"><strong>Select ID Column:</strong></label>
+                    <select id="resultsIdColumn" class="form-control">
+                        <option value="">None (use row order)</option>
+                    </select>
+                    <p class="info-text" style="font-size: 0.9em; color: #666; margin-top: 5px;">Select the column that identifies each row (e.g., ID, Execution, Iteration). Should match the ID column from the rules file.</p>
+                </div>
+
+                <!-- Column Selection for Results -->
+                <div id="resultsColumnSelection" class="wells-config" style="display: none;">
+                    <h3>Select WEIF Columns for Each Well</h3>
+                    <p class="info-text">For each well, select the WEIF column</p>
+                    <div id="resultsWellsContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3: Configure Parameters & Generate Target Rules -->
+        <section id="step3" class="step">
+            <div class="step-header">
+                <span class="step-number">3</span>
+                <h2>Configure Parameters & Generate Target Rules</h2>
+            </div>
+            <div class="step-content">
+                <div class="form-group">
+                    <label for="numRows">Number of Rows for Training:</label>
+                    <select id="numRows">
+                        <option value="all">All rows</option>
+                        <option value="100">100 rows</option>
+                        <option value="500">500 rows</option>
+                        <option value="1000">1000 rows</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input type="number" id="customRows" placeholder="Enter number" style="display: none; margin-top: 10px;">
+                </div>
+
+                <!-- Configuration Summary -->
+                <div id="configSummary" class="config-summary" style="display: none;">
+                    <h3>Configuration Summary</h3>
+                    <div id="summaryAlert" class="summary-alert" style="display: none;"></div>
+                    <div class="summary-content">
+                        <div class="summary-item">
+                            <strong>Training Rows:</strong> <span id="summaryRows">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>Wells Configured:</strong> <span id="summaryWells">0 / 9</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>GOR Columns:</strong> <span id="summaryGOR">0 selected</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>WEIF Columns:</strong> <span id="summaryWEIF">0 selected</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="generateBtn" class="btn btn-primary" disabled>Generate Target Rules</button>
+                <div id="configStatus" class="status-message" style="display: none;"></div>
+                <div id="generateStatus" class="status-message" style="display: none;"></div>
+
+                <div id="resultsContainer" style="display: none;">
+                    <div id="resultsTabs" class="tabs">
+                        <!-- Tabs will be generated dynamically -->
+                    </div>
+                    <div id="resultsContent" class="results-content">
+                        <!-- Results will be displayed here -->
+                    </div>
+                    <div class="download-section">
+                        <button id="downloadBtn" class="btn btn-success">Download Target Rules (Python File)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.step {
+    padding: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.step-header h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.upload-area {
+    margin: 30px 0;
+}
+
+.upload-box {
+    border: 3px dashed #667eea;
+    border-radius: 12px;
+    padding: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f8f9ff;
+}
+
+.upload-box:hover {
+    background: #f0f2ff;
+    border-color: #764ba2;
+    transform: translateY(-2px);
+}
+
+.upload-box svg {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.upload-box p {
+    font-size: 1.2em;
+    color: #667eea;
+    margin: 10px 0;
+}
+
+.file-hint {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.status-message {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.status-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.status-message.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.file-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.file-info h3 {
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group select,
+.form-group input[type="number"],
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group input[type="number"]:focus,
+.form-control:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.wells-config {
+    margin-top: 40px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.wells-config h3 {
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.info-text {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.well-config {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+}
+
+.well-config h4 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.well-config .form-group {
+    margin-bottom: 15px;
+}
+
+.well-config-compact {
+    margin-bottom: 8px;
+}
+
+.well-row {
+    transition: background 0.2s;
+}
+
+.well-row:hover {
+    background: #f0f2ff !important;
+}
+
+.well-row select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.multi-select {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.multi-select label {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.multi-select label:hover {
+    background: #e9ecef;
+}
+
+.multi-select input[type="checkbox"] {
+    margin-right: 8px;
+    width: auto;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.results-content {
+    margin-top: 30px;
+}
+
+.well-results {
+    display: none;
+}
+
+.well-results.active {
+    display: block;
+}
+
+.results-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.results-section h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+    background: #667eea;
+    color: white;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background: #f8f9fa;
+}
+
+.tree-image-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.tree-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.algorithm-explanation {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.algorithm-step {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.algorithm-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.algorithm-step h4 {
+    color: #667eea;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.algorithm-step p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+.algorithm-step strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.feature-list {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #f0f2ff;
+    border-left: 3px solid #667eea;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.target-rule-display {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.target-rule-display pre,
+.target-rule-display div {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.current-well-rule {
+    color: #667eea;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    padding: 12px 24px;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.tab.active {
+    background: #667eea;
+    color: white;
+}
+
+.tab:hover:not(.active) {
+    background: #d0d0d0;
+}
+
+.download-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.config-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 2px solid #e0e0e0;
+}
+
+.config-summary h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.summary-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.summary-item {
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    border-left: 4px solid #667eea;
+}
+
+.summary-item strong {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.summary-item span {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.summary-alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    line-height: 1.5;
+    display: block;
+    visibility: visible;
+}
+
+.summary-alert.error {
+    background: #fee;
+    border: 2px solid #e74c3c;
+    color: #c0392b;
+    font-weight: 500;
+}
+
+.summary-alert.success {
+    background: #efe;
+    border: 2px solid #27ae60;
+    color: #229954;
+}
+
+.significant-yes {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.significant-no {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.summary-item span.warning {
+    color: #e74c3c;
+}
+
+.well-header {
+    user-select: none;
+}
+
+.well-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.selected-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #e9ecef;
+    color: #6c757d;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.minimize-btn {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 8px;
+    min-width: 30px;
+}
+
+/* Print Styles - Show all well tabs */
+@media print {
+    /* Add a configuration header before step 1 */
+    #step1::before {
+        content: "Configuration";
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #667eea;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #667eea;
+        page-break-after: avoid;
+    }
+
+    /* Create a compact grid layout for configuration */
+    #step1 .step-content,
+    #step2 .step-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        font-size: 0.9em;
+    }
+
+    /* Make file info even more compact */
+    .file-info {
+        grid-column: span 1;
+    }
+
+    /* Merge config summary into the grid */
+    .config-summary {
+        grid-column: span 2;
+        margin-top: 10px;
+    }
+
+    /* Show step 3 and results container */
+    .step {
+        display: block !important;
+        padding: 20px !important;
+        border-bottom: none !important;
+    }
+
+    .step-content {
+        display: block !important;
+    }
+
+    #resultsContainer {
+        display: block !important;
+    }
+
+    .results-content {
+        display: block !important;
+    }
+
+    /* Show configuration information on first page - compact layout */
+    #step1,
+    #step2 {
+        display: block !important;
+        padding: 15px !important;
+    }
+
+    #step2 {
+        page-break-after: always;
+    }
+
+    /* Compact file information sections - merged layout */
+    .file-info {
+        display: block !important;
+        margin-bottom: 10px;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 4px;
+        border: 1px solid #e0e0e0;
+    }
+
+    .file-info h3 {
+        margin: 0 0 8px 0;
+        color: #667eea;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .file-info p {
+        margin: 4px 0;
+        line-height: 1.4;
+        font-size: 0.9em;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    /* Compact ID column selections - inline */
+    #rulesIdColumnSelection,
+    #resultsIdColumnSelection {
+        display: inline-block !important;
+        margin: 5px 10px 5px 0;
+        padding: 5px 10px;
+        background: #f8f9fa;
+        border-radius: 4px;
+        font-size: 0.9em;
+    }
+
+    #rulesIdColumnSelection label,
+    #resultsIdColumnSelection label {
+        display: inline;
+        margin-right: 5px;
+        font-weight: 600;
+        color: #667eea;
+        font-size: 0.9em;
+    }
+
+    #rulesIdColumnSelection select,
+    #resultsIdColumnSelection select {
+        display: inline-block !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: white;
+        border: 1px solid #ddd;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 0.9em;
+        color: #333;
+        pointer-events: none;
+        margin-left: 5px;
+    }
+
+    #rulesIdColumnSelection .info-text,
+    #resultsIdColumnSelection .info-text {
+        display: none !important;
+    }
+
+    /* Compact configuration summary - merged with file info */
+    .config-summary {
+        display: block !important;
+        margin: 10px 0;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 4px;
+        border: 1px solid #e0e0e0;
+    }
+
+    .config-summary h3 {
+        margin: 0 0 8px 0;
+        color: #667eea;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .summary-content {
+        display: block !important;
+    }
+
+    .summary-item {
+        margin: 4px 0;
+        padding: 4px 0;
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 0.9em;
+        border-bottom: none;
+    }
+
+    .summary-item strong {
+        color: #667eea;
+        margin-right: 5px;
+    }
+
+    /* Hide interactive elements and status messages */
+    .tabs,
+    .btn,
+    .download-section,
+    .upload-area,
+    .step-header,
+    .form-group:not(#rulesIdColumnSelection):not(#resultsIdColumnSelection),
+    .wells-config,
+    #generateBtn,
+    .status-message,
+    #summaryAlert {
+        display: none !important;
+    }
+
+    /* Show all well results, not just active ones */
+    .well-results {
+        display: block !important;
+        page-break-before: always;
+        page-break-inside: avoid;
+        margin-bottom: 30px;
+    }
+
+    /* First well doesn't need page break */
+    .well-results:first-of-type {
+        page-break-before: auto;
+    }
+
+    /* Add well name as header for each section */
+    .well-results::before {
+        content: attr(data-well-name);
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #667eea;
+        text-transform: uppercase;
+    }
+
+    /* Adjust colors for print */
+    body {
+        background: white !important;
+        padding: 0 !important;
+    }
+
+    .container {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+
+    header {
+        background: #667eea !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Ensure tables and content print well */
+    .table-container {
+        page-break-inside: avoid;
+    }
+
+    .results-section {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+
+    /* Make sure tree images print */
+    .tree-image-container {
+        page-break-inside: avoid;
+    }
+
+    .tree-image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Hide target rule sections within individual wells (except the last one) */
+    .well-results:not(:last-of-type) .target-rule-section {
+        display: none !important;
+    }
+
+    /* Show target rule only from the last well at the end */
+    .well-results:last-of-type .target-rule-section {
+        display: block !important;
+        page-break-before: always;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px solid #667eea;
+    }
+
+    /* Update the header for the final target rule */
+    .well-results:last-of-type .target-rule-section h3::before {
+        content: "All Wells - ";
+    }
+
+    /* Ensure text is readable in print - remove bold highlighting since we show all wells */
+    .target-rule-section strong,
+    .target-rule-section .current-well-rule,
+    .target-rule-section strong.current-well-rule {
+        color: #333 !important;
+        font-weight: normal !important;
+    }
+
+    /* Remove gradients and use solid colors for print */
+    * {
+        background-image: none !important;
+    }
+}
